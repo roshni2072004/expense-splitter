@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientbackg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- App label at the top -->
+        <TextView
+            android:id="@+id/appLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expense Splitter"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#4B0082"
+            android:gravity="center"
+            android:paddingBottom="35dp" />
+
+        <!-- Input fields start below the label -->
+        <EditText
+            android:id="@+id/numPeopleInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter number of people"
+            android:textStyle="bold"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textColor="#FFFFFF"
+            android:background="#CC6200EE"/>
+
+        <LinearLayout
+            android:id="@+id/nameContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/confirmNamesButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Names"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/expenseContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate Share"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear All"
+            android:layout_marginTop="8dp"
+            android:textColor="#FFFFFF"
+            android:background="#CC6200EE"/>
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingTop="16dp" />
+    </LinearLayout>
+</ScrollView>
